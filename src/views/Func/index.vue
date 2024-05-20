@@ -4,7 +4,7 @@
     <el-row :gutter="20">
       <el-col :span="12">
         <div class="left">
-          <Hitokoto v-if="noHitokoto"/>
+          <Hitokoto v-if="noHitokoto" />
           <Music v-if="playerHasId" />
         </div>
       </el-col>
@@ -37,7 +37,7 @@ import Weather from "@/components/Weather.vue";
 
 const store = mainStore();
 const noHitokoto = import.meta.env.VITE_NO_HITOKOTO;
-const weatherKey = import.meta.env.VITE_WEATHER_KEY;
+const weatherKey = import.meta.env.VITE_WEATHER_KEY === "false" ? false : true;
 
 // 当前时间
 const currentTime = ref({});

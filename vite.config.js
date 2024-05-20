@@ -22,6 +22,7 @@ export default ({ mode }) =>
       }),
       VitePWA({
         registerType: "autoUpdate",
+        /**
         workbox: {
           skipWaiting: true,
           clientsClaim: true,
@@ -41,7 +42,7 @@ export default ({ mode }) =>
               },
             },
           ],
-        },
+        },*/
         manifest: {
           name: loadEnv(mode, process.cwd()).VITE_SITE_NAME,
           short_name: loadEnv(mode, process.cwd()).VITE_SITE_NAME,

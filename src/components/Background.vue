@@ -12,7 +12,7 @@
     <div :class="store.backgroundShow ? 'gray hidden' : 'gray'" />
     <Transition name="fade" mode="out-in">
       <a
-        v-if="store.backgroundShow && store.coverType != '3'"
+        v-if="store.backgroundShow && store.coverType != '3' && false && 'This is just never show'"
         class="down"
         :href="bgUrl"
         target="_blank"
@@ -42,7 +42,7 @@ const changeBg = (type) => {
     bgUrl.value = `/images/background${bgRandom}.jpg`;
   } else if (type == 1) {
     const isMobile = window.innerWidth < 768;
-    bgUrl.value = `https://bingw.jasonzeng.dev/?resolution=${isMobile ? "768x1280" : "1920x1080"}&index=random`;
+    bgUrl.value = `https://bingw.jasonzeng.dev/?resolution=${isMobile ? "768x1280" : "UHD"}&index=random`;
   } else if (type == 2) {
     bgUrl.value = "https://api.aixiaowai.cn/gqapi/gqapi.php";
   } else if (type == 3) {

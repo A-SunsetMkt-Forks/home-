@@ -3,5 +3,80 @@
     "icon": "Blog",
     "name": "Blog",
     "link": "https://jekyll.lwd-temp.top/"
+  },
+  {
+    "icon": "Heartbeat",
+    "name": "Status",
+    "link": "https://status.lwd-temp.top/"
+  },
+  {
+    "icon": "Search",
+    "name": "DuckDuckGo",
+    "link": "https://duckduckgo.com/?kae=-1&kp=-2&kn=1&k1=-1&kax=-1&kak=-1&kap=-1&kaq=-1&kao=-1&kau=-1&kc=-1&kg=p&k18=1"
+  },
+  {
+    "icon": "Envelope",
+    "name": "Temp Mail",
+    "link": "https://mail.960923.xyz/"
+  },
+  {
+    "icon": "CircleRegular",
+    "name": "Blue Archive",
+    "link": "https://ba.lwd-temp.top/"
+  },
+  {
+    "icon": "ChessRook",
+    "name": "CyberChef",
+    "link": "https://cyberchef.lwd-temp.top/"
+  },
+  {
+    "icon": "Paste",
+    "name": "PasteBin",
+    "link": "https://pastes.lwd-temp.top/"
+  },
+  {
+    "icon": "Link",
+    "name": "Short URL",
+    "link": "https://url.lwd-temp.top/"
+  },
+  {
+    "icon": "Comment",
+    "name": "LLM Chat",
+    "link": "https://converse.lwd-temp.top/"
+  },
+  {
+    "icon": "Database",
+    "name": "Drive",
+    "link": "https://drive.lwd-temp.top/"
+  },
+  {
+    "icon": "Donate",
+    "name": "Donate",
+    "link": "https://donate.lwd-temp.top/"
+  },
+  {
+    "icon": "User",
+    "name": "Mori Meina",
+    "link": "https://www.xzc-meina.top/"
+  },
+  {
+    "icon": "Newspaper",
+    "name": "Lianhe Zaobao",
+    "link": "https://www.zaobao.com/"
+  },
+  {
+    "icon": "Windows",
+    "name": "MS Activation",
+    "link": "https://massgrave.dev/"
+  },
+  {
+    "icon": "Desktop",
+    "name": "AnyDesk",
+    "link": "https://anydesk.com/"
+  },
+  {
+    "icon": "Code",
+    "name": "VS Code",
+    "link": "https://code.visualstudio.com/"
   }
 ]

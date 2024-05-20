@@ -81,11 +81,11 @@ onMounted(() => {
   // 屏蔽右键
   document.oncontextmenu = () => {
     ElMessage({
-      message: "It's suggested not to use the right mouse button.",
+      message: "Right click is disabled.",
       grouping: true,
       duration: 2000,
     });
-    // return false;
+    return false;
   };
 
   // 鼠标中键事件

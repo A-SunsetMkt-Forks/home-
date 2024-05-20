@@ -13,8 +13,8 @@
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="个性化调整" name="2">
-        <div class="item">
+      <el-collapse-item title="Custom Setting" name="2">
+        <div class="item" v-if="VITE_SITE_START">
           <span class="text">建站日期显示</span>
           <el-switch
             v-model="siteStartShow"
@@ -23,7 +23,7 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item">
+        <div class="item" v-if="VITE_SONG_ID">
           <span class="text">音乐点击是否打开面板</span>
           <el-switch
             v-model="musicClick"
@@ -32,7 +32,7 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item">
+        <div class="item" v-if="VITE_SONG_ID">
           <span class="text">底栏歌词显示</span>
           <el-switch
             v-model="playerLrcShow"
@@ -41,7 +41,7 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item">
+        <div class="item" v-if="VITE_SONG_ID">
           <span class="text">底栏背景模糊</span>
           <el-switch
             v-model="footerBlur"
@@ -51,7 +51,7 @@
           />
         </div>
       </el-collapse-item>
-      <el-collapse-item title="播放器配置" name="3">
+      <el-collapse-item title="播放器配置" name="3" v-if="VITE_SONG_ID">
         <div class="item">
           <span class="text">自动播放</span>
           <el-switch

@@ -12,6 +12,12 @@
     "url": "https://contact.lwd-temp.top/"
   },
   {
+    "name": "Chat",
+    "icon": "/images/icon/Chat.svg",
+    "tip": "Chat with me",
+    "url": "https://tawk.to/chat/663ae0659a809f19fb2e7f5a/1htc4169r"
+  },
+  {
     "name": "Email",
     "icon": "/images/icon/Email.svg",
     "tip": "Email me (not suggested)",
@@ -20,13 +26,7 @@
   {
     "name": "Twitter",
     "icon": "/images/icon/Twitter.svg",
-    "tip": "My Twitter account (not for business use)",
+    "tip": "Twitter (non-formal)",
     "url": "https://security.lwd-temp.top/api/v1.09/twitter?redir=1"
-  },
-  {
-    "name": "PGP Public Key",
-    "icon": "/images/icon/Key.svg",
-    "tip": "Send encrypted message (not suggested)",
-    "url": "https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0xafce72de15a64a20f9e731bbc8d10d21fdcb405a"
   }
 ]

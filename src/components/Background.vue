@@ -17,7 +17,7 @@
         :href="bgUrl"
         target="_blank"
       >
-        Download Wallpaper
+        Download
       </a>
     </Transition>
   </div>

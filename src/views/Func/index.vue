@@ -21,7 +21,7 @@
               <span> {{ currentTime.hour }}:{{ currentTime.minute }}:{{ currentTime.second }}</span>
             </div>
           </div>
-          <Weather v-if="VITE_WEATHER_KEY" />
+          <Weather v-if="weatherKey" />
         </div>
       </el-col>
     </el-row>
@@ -37,6 +37,7 @@ import Weather from "@/components/Weather.vue";
 
 const store = mainStore();
 const noHitokoto = import.meta.env.VITE_NO_HITOKOTO;
+const weatherKey = import.meta.env.VITE_WEATHER_KEY;
 
 // 当前时间
 const currentTime = ref({});

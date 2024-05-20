@@ -86,4 +86,8 @@ const socialTip = ref("Contact me here");
     }
   }
 }
+
+.icon {
+  filter: invert(100%) brightness(200%); /* 将SVG图像变为白色 */
+}
 </style>

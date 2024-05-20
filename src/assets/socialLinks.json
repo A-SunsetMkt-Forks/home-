@@ -1,14 +1,32 @@
 [
   {
     "name": "GitHub",
-    "icon": "/images/icon/github.png",
-    "tip": "GitHub",
+    "icon": "/images/icon/Github.svg",
+    "tip": "See my GitHub profile",
     "url": "http://github.com/lwd-temp"
   },
   {
+    "name": "Contact Me Form",
+    "icon": "/images/icon/FormOutlined.svg",
+    "tip": "Fill a form to contact me",
+    "url": "https://contact.lwd-temp.top/"
+  },
+  {
     "name": "Email",
-    "icon": "/images/icon/email.png",
-    "tip": "Email",
+    "icon": "/images/icon/Email.svg",
+    "tip": "Email me (not suggested)",
     "url": "mailto:i@lwd-temp.top"
+  },
+  {
+    "name": "Twitter",
+    "icon": "/images/icon/Twitter.svg",
+    "tip": "My Twitter account (not for business use)",
+    "url": "https://security.lwd-temp.top/api/v1.09/twitter?redir=1"
+  },
+  {
+    "name": "PGP Public Key",
+    "icon": "/images/icon/Key.svg",
+    "tip": "Send encrypted message (not suggested)",
+    "url": "https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0xafce72de15a64a20f9e731bbc8d10d21fdcb405a"
   }
 ]

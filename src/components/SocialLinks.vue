@@ -46,6 +46,7 @@ const socialTip = ref("通过这里联系我吧");
     .link {
       justify-content: space-evenly !important;
       width: 90%;
+      flex-wrap: wrap;
     }
     .tip {
       display: none !important;

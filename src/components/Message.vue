@@ -3,7 +3,7 @@
   <div class="message">
     <!-- Logo -->
     <div class="logo">
-      <img class="logo-img" :src="siteLogo" alt="logo" />
+      <img class="logo-img" :src="siteLogo" alt="logo" v-if="VITE_SITE_MAIN_LOGO" />
       <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>

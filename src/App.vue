@@ -93,7 +93,7 @@ onMounted(() => {
     if (event.button == 1) {
       store.backgroundShow = !store.backgroundShow;
       ElMessage({
-        message: `已${store.backgroundShow ? "开启" : "退出"}壁纸展示状态`,
+        message: `${store.backgroundShow ? "Enter" : "Quit"} Wallpaper showing mode`,
         grouping: true,
       });
     }

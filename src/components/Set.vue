@@ -111,7 +111,7 @@ const activeName = ref("1");
 // 壁纸切换
 const radioChange = () => {
   ElMessage({
-    message: "壁纸更换成功",
+    message: "Wallpaper changed successfully",
     icon: h(SuccessPicture, {
       theme: "filled",
       fill: "#efefef",

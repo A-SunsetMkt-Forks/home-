@@ -13,7 +13,7 @@
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="Custom Setting" name="2">
+      <el-collapse-item title="Custom Setting" name="2" v-if="false">
         <div class="item" v-if="VITE_SITE_START">
           <span class="text">建站日期显示</span>
           <el-switch
@@ -81,7 +81,7 @@
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="其他设置" name="4">
+      <el-collapse-item title="其他设置" name="4" v-if="false">
         <div>设置内容待增加</div>
       </el-collapse-item>
     </el-collapse>

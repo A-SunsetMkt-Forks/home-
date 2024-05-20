@@ -81,11 +81,11 @@ onMounted(() => {
   // 屏蔽右键
   document.oncontextmenu = () => {
     ElMessage({
-      message: "为了浏览体验，本站禁用右键",
+      message: "It's suggested not to use the right mouse button.",
       grouping: true,
       duration: 2000,
     });
-    return false;
+    // return false;
   };
 
   // 鼠标中键事件

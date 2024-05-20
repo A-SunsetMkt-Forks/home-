@@ -4,7 +4,7 @@
     <el-row :gutter="20">
       <el-col :span="12">
         <div class="left">
-          <Hitokoto />
+          <Hitokoto v-if="NO_HITOKOTO"/>
           <Music v-if="playerHasId" />
         </div>
       </el-col>

@@ -14,7 +14,7 @@
         </div>
       </el-collapse-item>
       <el-collapse-item title="Custom Setting" name="2" v-if="false">
-        <div class="item" v-if="VITE_SITE_START">
+        <div class="item" v-if="siteStart">
           <span class="text">建站日期显示</span>
           <el-switch
             v-model="siteStartShow"
@@ -23,7 +23,7 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item" v-if="VITE_SONG_ID">
+        <div class="item" v-if="songID">
           <span class="text">音乐点击是否打开面板</span>
           <el-switch
             v-model="musicClick"
@@ -32,7 +32,7 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item" v-if="VITE_SONG_ID">
+        <div class="item" v-if="songID">
           <span class="text">底栏歌词显示</span>
           <el-switch
             v-model="playerLrcShow"
@@ -41,7 +41,7 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item" v-if="VITE_SONG_ID">
+        <div class="item" v-if="songID">
           <span class="text">底栏背景模糊</span>
           <el-switch
             v-model="footerBlur"
@@ -51,7 +51,7 @@
           />
         </div>
       </el-collapse-item>
-      <el-collapse-item title="播放器配置" name="3" v-if="VITE_SONG_ID">
+      <el-collapse-item title="播放器配置" name="3" v-if="songID">
         <div class="item">
           <span class="text">自动播放</span>
           <el-switch
@@ -93,6 +93,8 @@ import { CheckSmall, CloseSmall, SuccessPicture } from "@icon-park/vue-next";
 import { mainStore } from "@/store";
 import { storeToRefs } from "pinia";
 
+const songID = import.meta.env.VITE_SONG_ID;
+const siteStart = import.meta.env.VITE_SITE_START;
 const store = mainStore();
 const {
   coverType,

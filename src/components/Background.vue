@@ -41,7 +41,8 @@ const changeBg = (type) => {
   if (type == 0) {
     bgUrl.value = `/images/background${bgRandom}.jpg`;
   } else if (type == 1) {
-    bgUrl.value = "https://bingw.jasonzeng.dev/";
+    const isMobile = window.innerWidth < 768;
+    bgUrl.value = `https://bingw.jasonzeng.dev/?resolution=${isMobile ? "768x1280" : "1920x1080"}&index=random`;
   } else if (type == 2) {
     bgUrl.value = "https://api.aixiaowai.cn/gqapi/gqapi.php";
   } else if (type == 3) {

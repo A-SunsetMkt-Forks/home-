@@ -94,7 +94,7 @@ export const helloInit = () => {
   }
   ElMessage({
     dangerouslyUseHTMLString: true,
-    message: `<strong>${hello}</strong> And we are glad to have you here.`,
+    message: `<strong>${hello}</strong> Glad to see you.`,
   });
 };
 

@@ -10,7 +10,12 @@
         @mouseenter="socialTip = item.tip"
         @mouseleave="socialTip = 'Contact me here'"
       >
-        <img class="icon" :src="item.icon" height="24" />
+        <img
+          class="icon"
+          :src="item.icon"
+          height="24"
+          v-if="!(item.name == 'Twitter' && isChina)"
+        />
       </a>
     </div>
     <span class="tip">{{ socialTip }}</span>
@@ -19,6 +24,11 @@
 
 <script setup>
 import socialLinks from "@/assets/socialLinks.json";
+
+const isChina =
+  navigator.language === "zh-CN" ||
+  navigator.languages.includes("zh-CN") ||
+  Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Shanghai";
 
 // 社交链接提示
 const socialTip = ref("Contact me here");

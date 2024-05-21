@@ -42,9 +42,10 @@ const changeBg = (type) => {
     bgUrl.value = `/images/background${bgRandom}.jpg`;
   } else if (type == 1) {
     const isMobile = window.innerWidth < 768;
-    bgUrl.value = `https://bingw.jasonzeng.dev/?resolution=${isMobile ? "768x1280" : "UHD"}&index=random`;
+    bgUrl.value = `https://bingw.jasonzeng.dev/?resolution=${isMobile ? "768x1280" : "UHD"}`;
   } else if (type == 2) {
-    bgUrl.value = "https://api.aixiaowai.cn/gqapi/gqapi.php";
+    const isMobile = window.innerWidth < 768;
+    bgUrl.value = `https://bingw.jasonzeng.dev/?resolution=${isMobile ? "768x1280" : "UHD"}&index=random`;
   } else if (type == 3) {
     bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
   }

@@ -5,7 +5,8 @@
         <div class="bg-set">
           <el-radio-group v-model="coverType" text-color="#ffffff" @change="radioChange">
             <el-radio value="0" size="large" border>Default</el-radio>
-            <el-radio value="1" size="large" border>Bing Wallpaper</el-radio>
+            <el-radio value="1" size="large" border>Today's Bing Wallpaper</el-radio>
+            <el-radio value="2" size="large" border>Random Bing Wallpaper</el-radio>
             <!--
             <el-radio value="2" size="large" border>随机风景</el-radio>
             <el-radio value="3" size="large" border>随机动漫</el-radio>

@@ -20,7 +20,7 @@
     "link": "https://mail.960923.xyz/"
   },
   {
-    "icon": "CircleRegular",
+    "icon": "CenterCircle",
     "name": "Blue Archive",
     "link": "https://ba.lwd-temp.top/"
   },
@@ -70,7 +70,7 @@
     "link": "https://massgrave.dev/"
   },
   {
-    "icon": "Desktop",
+    "icon": "Diamond48Filled",
     "name": "AnyDesk",
     "link": "https://anydesk.com/"
   },
@@ -78,5 +78,10 @@
     "icon": "Code",
     "name": "VS Code",
     "link": "https://code.visualstudio.com/"
+  },
+  {
+    "icon": "Gauge24Filled",
+    "name": "Speedtest",
+    "link": "http://ookla.speedtestcustom.com/"
   }
 ]

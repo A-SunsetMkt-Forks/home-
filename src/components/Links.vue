@@ -61,6 +61,8 @@ import {
   Donate,
   Database,
 } from "@vicons/fa"; // 注意使用正确的类别
+import { Gauge24Filled, Diamond48Filled } from "@vicons/fluent";
+import { CenterCircle } from "@vicons/carbon";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -96,6 +98,9 @@ const siteIcon = {
   Paste,
   Donate,
   Database,
+  Gauge24Filled,
+  Diamond48Filled,
+  CenterCircle,
 };
 
 // 链接跳转

@@ -79,7 +79,8 @@ p {
 
 // 文字超出
 .text-hidden {
-  overflow: hidden;
+  /** overflow: hidden;*/
+  overflow: visible;
   white-space: nowrap;
   text-overflow: ellipsis;
 }

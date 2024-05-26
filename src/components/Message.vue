@@ -120,6 +120,7 @@ watch(
     @media (max-width: 768px) {
       .logo-img {
         width: 100px;
+        display: none;
       }
       .name {
         height: 128px;

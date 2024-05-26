@@ -84,6 +84,12 @@ p {
   overflow: visible;
   white-space: nowrap;
   text-overflow: ellipsis;
+  /** On mobile phones: */
+  @media (max-width: 768px) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 // 弹窗样式

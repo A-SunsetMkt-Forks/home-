@@ -83,5 +83,10 @@
     "icon": "Gauge24Filled",
     "name": "Speedtest",
     "link": "https://gfiber.speedtestcustom.com/"
+  },
+  {
+    "icon": "GridDots28Filled",
+    "name": "Tailscale",
+    "link": "https://tailscale.com/"
   }
 ]

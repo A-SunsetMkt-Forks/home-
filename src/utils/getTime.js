@@ -100,13 +100,7 @@ export const helloInit = () => {
 
 // 默哀模式
 const anniversaries = {
-  5.30: "Pre-June 4th",
-  5.31: "Pre-June 4th",
-  6.1: "Pre-June 4th",
-  6.2: "Pre-June 4th",
-  6.3: "Pre-June 4th",
-  6.4: "June 4th",
-  6.5: "Post-June 4th",
+  // "6.4": "June 4th",
 };
 export const checkDays = () => {
   const myDate = new Date();

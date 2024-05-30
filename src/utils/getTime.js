@@ -101,6 +101,7 @@ export const helloInit = () => {
 // 默哀模式
 const anniversaries = {
   // "6.4": "June 4th",
+  6.4: "June 4th",
 };
 export const checkDays = () => {
   const myDate = new Date();

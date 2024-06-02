@@ -102,7 +102,7 @@ export const helloInit = () => {
 const anniversaries = {
   // "6.4": "June 4th",
   6.3: "Pre June 4th",
-  6.4: "June 4th",
+  6.4: "the day when something significant occurred in 1989",
   6.5: "Post June 4th",
 };
 export const checkDays = () => {
@@ -116,7 +116,7 @@ export const checkDays = () => {
     gray.innerHTML = "html{filter: grayscale(100%)}";
     document.head.appendChild(gray);
     ElMessage({
-      message: `Today is ${anniversaries[key]}`,
+      message: `Today is ${anniversaries[key]}.`,
       duration: 14000,
       icon: h(SpaCandle, { theme: "filled", fill: "#efefef" }),
     });

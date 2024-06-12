@@ -60,6 +60,7 @@ import {
   Paste,
   Donate,
   Database,
+  FirefoxBrowser,
 } from "@vicons/fa"; // 注意使用正确的类别
 import { Gauge24Filled, Diamond48Filled, GridDots28Filled } from "@vicons/fluent";
 import { CenterCircle } from "@vicons/carbon";
@@ -102,6 +103,7 @@ const siteIcon = {
   Diamond48Filled,
   CenterCircle,
   GridDots28Filled,
+  FirefoxBrowser,
 };
 
 // 链接跳转

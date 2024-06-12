@@ -75,9 +75,9 @@
     "link": "https://anydesk.com/"
   },
   {
-    "icon": "Code",
-    "name": "VS Code",
-    "link": "https://code.visualstudio.com/"
+    "icon": "FirefoxBrowser",
+    "name": "Firefox",
+    "link": "https://www.mozilla.org/zh-CN/firefox/new/"
   },
   {
     "icon": "Gauge24Filled",

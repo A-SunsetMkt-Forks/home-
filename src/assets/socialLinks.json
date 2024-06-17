@@ -3,7 +3,7 @@
     "name": "GitHub",
     "icon": "/images/icon/BrandGithub.svg",
     "tip": "See my GitHub profile",
-    "url": "http://github.com/lwd-temp"
+    "url": "https://github.com/SunsetMkt"
   },
   {
     "name": "Contact Me Form",
@@ -21,6 +21,6 @@
     "name": "Twitter",
     "icon": "/images/icon/BrandTwitter.svg",
     "tip": "Twitter (non-formal)",
-    "url": "https://security.lwd-temp.top/api/v1.09/twitter?redir=1"
+    "url": "https://api.sunmkt.top/api/v1.09/twitter?redir=1"
   }
 ]

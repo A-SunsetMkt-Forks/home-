@@ -2,7 +2,7 @@
   <div class="more-content">
     <p>
       Here should be some secret, but it's
-      <a href="https://portal.lwd-temp.top/portal/" target="_blank">not</a>.
+      <a href="https://portal.sunmkt.top/portal/" target="_blank">not</a>.
     </p>
   </div>
 </template>

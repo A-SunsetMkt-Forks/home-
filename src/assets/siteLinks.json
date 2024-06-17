@@ -2,12 +2,12 @@
   {
     "icon": "Blog",
     "name": "Blog",
-    "link": "https://jekyll.lwd-temp.top/"
+    "link": "https://blog.sunmkt.top/"
   },
   {
     "icon": "Heartbeat",
     "name": "Status",
-    "link": "https://status.lwd-temp.top/"
+    "link": "https://status.sunmkt.top/"
   },
   {
     "icon": "Search",
@@ -22,12 +22,12 @@
   {
     "icon": "CenterCircle",
     "name": "Blue Archive",
-    "link": "https://ba.lwd-temp.top/"
+    "link": "https://ba.sunmkt.top/"
   },
   {
     "icon": "ChessRook",
     "name": "CyberChef",
-    "link": "https://cyberchef.lwd-temp.top/"
+    "link": "https://cyberchef.sunmkt.top/"
   },
   {
     "icon": "Paste",
@@ -37,22 +37,22 @@
   {
     "icon": "Link",
     "name": "Short URL",
-    "link": "https://url.lwd-temp.top/"
+    "link": "https://url.sunmkt.top/"
   },
   {
     "icon": "Comment",
     "name": "LLM Chat",
-    "link": "https://converse.lwd-temp.top/"
+    "link": "https://talk.sunmkt.top/"
   },
   {
     "icon": "Database",
     "name": "Drive",
-    "link": "https://drive.lwd-temp.top/"
+    "link": "https://drive.sunmkt.top/"
   },
   {
     "icon": "Donate",
     "name": "Donate",
-    "link": "https://donate.lwd-temp.top/"
+    "link": "https://donate.sunmkt.top/"
   },
   {
     "icon": "User",

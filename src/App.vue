@@ -78,14 +78,24 @@ onMounted(() => {
   // 自定义鼠标
   cursorInit();
 
+  var rightClickedTimes = 0;
   // 屏蔽右键
   document.oncontextmenu = () => {
-    ElMessage({
-      message: "Right click is disabled.",
-      grouping: true,
-      duration: 2000,
-    });
-    return false;
+    rightClickedTimes++;
+    if (rightClickedTimes < 50) {
+      ElMessage({
+        message: "Right click is disabled.",
+        grouping: true,
+        duration: 2000,
+      });
+      return false;
+    } else if (rightClickedTimes == 50) {
+      ElMessage({
+        message: "Well... Right click is enabled now.",
+        grouping: true,
+        duration: 2000,
+      });
+    }
   };
 
   // 鼠标中键事件
@@ -116,7 +126,7 @@ onMounted(() => {
  _| |_| |  | |____) |  | |      | |
 |_____|_|  |_|_____/   |_|      |_|`;
   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
-  console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
+  // console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });
 
 onBeforeUnmount(() => {

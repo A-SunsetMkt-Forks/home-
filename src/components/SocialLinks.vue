@@ -13,6 +13,7 @@
         <img
           class="icon"
           :src="item.icon"
+          :alt="item.name"
           height="24"
           v-if="!(item.name == 'Twitter' && isChina)"
         />

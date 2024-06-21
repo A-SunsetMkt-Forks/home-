@@ -25,6 +25,7 @@
             <div
               class="item cards"
               :style="index < 3 ? 'margin-bottom: 20px' : null"
+              :title="item.name"
               @click="jumpLink(item)"
             >
               <Icon size="26">

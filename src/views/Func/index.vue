@@ -11,20 +11,24 @@
       <el-col :span="12">
         <div class="right cards">
           <div class="time">
-            <div class="date">
-              <span>{{ currentTime.year }}&nbsp;/&nbsp;</span>
-              <span>{{ currentTime.month }}&nbsp;/&nbsp;</span>
-              <span>{{ currentTime.day }}&nbsp;&nbsp;</span>
-              <span class="sm-hidden">{{ currentTime.weekday }}</span>
+            <div class="date" id="_zU480_date">
+              Loading
+              <!--
+              <span>YYYY&nbsp;/&nbsp;</span>
+              <span>MM&nbsp;/&nbsp;</span>
+              <span>DD&nbsp;&nbsp;</span>
+              <span>Weekday</span>
+              -->
             </div>
             <div class="text">
               <span id="_zU480">Loading</span>
             </div>
           </div>
           <!--<Weather v-if="weatherKey" />-->
-          <span
-            >UTC+8 by
-            <a href="https://time.is/UTC+8" id="time_is_link" rel="nofollow">Time.is</a></span
+          <span>
+            <a href="https://time.is/UTC+8" id="time_is_link" rel="nofollow"
+              >UTC+8 by Time.is</a
+            ></span
           >
           <!--JavaScript 实现在 index.html-->
         </div>

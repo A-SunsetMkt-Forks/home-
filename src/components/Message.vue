@@ -97,7 +97,7 @@ watch(
     max-width: 460px;
     .logo-img {
       border-radius: 50%;
-      width: 120px;
+      width: 150px;
     }
     .name {
       width: 100%;

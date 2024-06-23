@@ -18,10 +18,15 @@
               <span class="sm-hidden">{{ currentTime.weekday }}</span>
             </div>
             <div class="text">
-              <span> {{ currentTime.hour }}:{{ currentTime.minute }}:{{ currentTime.second }}</span>
+              <span id="_zU480">Loading</span>
             </div>
           </div>
-          <Weather v-if="weatherKey" />
+          <!--<Weather v-if="weatherKey" />-->
+          <span
+            >UTC+8 by
+            <a href="https://time.is/UTC+8" id="time_is_link" rel="nofollow">Time.is</a></span
+          >
+          <!--JavaScript 实现在 index.html-->
         </div>
       </el-col>
     </el-row>

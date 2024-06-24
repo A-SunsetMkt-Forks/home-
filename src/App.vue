@@ -79,19 +79,20 @@ onMounted(() => {
   cursorInit();
 
   var rightClickedTimes = 0;
+  var enableRightClickTimes = 5;
   // 屏蔽右键
   document.oncontextmenu = () => {
-    rightClickedTimes++;
-    if (rightClickedTimes < 50) {
+    if (rightClickedTimes < enableRightClickTimes) {
+      rightClickedTimes++;
       ElMessage({
         message: "Right click is disabled.",
         grouping: true,
         duration: 2000,
       });
       return false;
-    } else if (rightClickedTimes == 50) {
+    } else if (rightClickedTimes == enableRightClickTimes) {
       ElMessage({
-        message: "Well... Right click is enabled now.",
+        message: "Right click is enabled now.",
         grouping: true,
         duration: 2000,
       });

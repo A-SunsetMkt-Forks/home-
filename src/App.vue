@@ -91,6 +91,7 @@ onMounted(() => {
       });
       return false;
     } else if (rightClickedTimes == enableRightClickTimes) {
+      rightClickedTimes++;
       ElMessage({
         message: "Right click is enabled now.",
         grouping: true,

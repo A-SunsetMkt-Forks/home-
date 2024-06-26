@@ -2,13 +2,13 @@
   {
     "name": "GitHub",
     "icon": "/images/icon/BrandGithub.svg",
-    "tip": "See my GitHub profile",
+    "tip": "Check out my GitHub profile",
     "url": "https://github.com/SunsetMkt"
   },
   {
     "name": "Contact Me Form",
     "icon": "/images/icon/FormOutlined.svg",
-    "tip": "Fill a form to contact me",
+    "tip": "Complete the form to contact me",
     "url": "https://contact.sunmkt.top/"
   },
   {
@@ -22,5 +22,11 @@
     "icon": "/images/icon/BrandTwitter.svg",
     "tip": "Twitter (non-formal)",
     "url": "https://api.sunmkt.top/api/v1.09/twitter?redir=1"
+  },
+  {
+    "name": "PGP Public Key",
+    "icon": "/images/icon/Key.svg",
+    "tip": "Currently not used",
+    "url": "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xa1c058db7f575893"
   }
 ]

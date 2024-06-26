@@ -3,20 +3,14 @@
   <div class="social">
     <div class="link">
       <a
-        v-for="item in socialLinks"
+        v-for="item in filteredSocialLinks"
         :key="item.name"
         :href="item.url"
         target="_blank"
         @mouseenter="socialTip = item.tip"
         @mouseleave="socialTip = 'Contact me here'"
       >
-        <img
-          class="icon"
-          :src="item.icon"
-          :alt="item.name"
-          height="24"
-          v-if="!(item.name == 'Twitter' && isChina)"
-        />
+        <img class="icon" :src="item.icon" :alt="item.name" height="24" />
       </a>
     </div>
     <span class="tip">{{ socialTip }}</span>
@@ -24,6 +18,7 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import socialLinks from "@/assets/socialLinks.json";
 
 const isChina =
@@ -33,6 +28,10 @@ const isChina =
 
 // 社交链接提示
 const socialTip = ref("Contact me here");
+
+const filteredSocialLinks = computed(() => {
+  return socialLinks.filter((item) => !(item.name === "Twitter" && isChina));
+});
 </script>
 
 <style lang="scss" scoped>

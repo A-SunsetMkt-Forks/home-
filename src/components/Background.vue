@@ -47,7 +47,7 @@ const changeBg = (type) => {
     const isMobile = window.innerWidth < 768;
     bgUrl.value = `https://bingw.sunmkt.top/?resolution=${isMobile ? "768x1280" : "UHD"}&day=random`;
   } else if (type == 3) {
-    bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
+    bgUrl.value = "https://api.vvhan.com/api/wallpaper/acg";
   }
 };
 

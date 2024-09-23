@@ -16,7 +16,7 @@
             {{ item.remaining }}&nbsp;{{ tag === "day" ? "hour(s)" : "day(s)" }}&nbsp;Left
           </span>
         </div>
-        <el-progress :text-inside="true" :stroke-width="20" :percentage="item.percentage" />
+        <el-progress :text-inside="true" :stroke-width="20" :percentage="parseFloat(item.percentage)" />
       </div>
       <!-- 建站日期 -->
       <div v-if="store.siteStartShow" class="capsule-item start">

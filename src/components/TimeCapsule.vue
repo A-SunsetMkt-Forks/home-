@@ -2,18 +2,18 @@
   <div class="time-capsule">
     <div class="title">
       <hourglass-full theme="two-tone" size="24" :fill="['#efefef', '#00000020']" />
-      <span>时光胶囊</span>
+      <span>Time Capsule</span>
     </div>
     <div v-if="timeData" class="all-capsule">
       <div v-for="(item, tag, index) in timeData" :key="index" class="capsule-item">
         <div class="item-title">
           <span class="percentage">
-            {{ item.name }}已度过
+            {{ item.name }} has passed
             <strong>{{ item.passed }}</strong>
-            {{ tag === "day" ? "小时" : "天" }}
+            {{ tag === "day" ? "hour(s)" : "day(s)" }}
           </span>
           <span class="remaining">
-            剩余&nbsp;{{ item.remaining }}&nbsp;{{ tag === "day" ? "小时" : "天" }}
+            {{ item.remaining }}&nbsp;{{ tag === "day" ? "hour(s)" : "day(s)" }}&nbsp;Left
           </span>
         </div>
         <el-progress :text-inside="true" :stroke-width="20" :percentage="parseFloat(item.percentage)" />

@@ -1,5 +1,10 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <div class="more-content">
+    <p>
+      Here should be some secret, but it's
+      <a href="https://portal.sunmkt.top/portal/" target="_blank">not</a>.
+    </p>
+  </div>
 </template>
 
 <style lang="scss" scoped>

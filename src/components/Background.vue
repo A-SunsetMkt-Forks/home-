@@ -12,12 +12,12 @@
     <div :class="store.backgroundShow ? 'gray hidden' : 'gray'" />
     <Transition name="fade" mode="out-in">
       <a
-        v-if="store.backgroundShow && store.coverType != '3'"
+        v-if="store.backgroundShow && store.coverType != '3' && false && 'This is just never show'"
         class="down"
         :href="bgUrl"
         target="_blank"
       >
-        下载壁纸
+        Download
       </a>
     </Transition>
   </div>
@@ -41,9 +41,11 @@ const changeBg = (type) => {
   if (type == 0) {
     bgUrl.value = `/images/background${bgRandom}.jpg`;
   } else if (type == 1) {
-    bgUrl.value = "https://api.dujin.org/bing/1920.php";
+    const isMobile = window.innerWidth < 768;
+    bgUrl.value = `https://bingw.sunmkt.top/?resolution=${isMobile ? "768x1280" : "UHD"}`;
   } else if (type == 2) {
-    bgUrl.value = "https://api.vvhan.com/api/wallpaper/views";
+    const isMobile = window.innerWidth < 768;
+    bgUrl.value = `https://bingw.sunmkt.top/?resolution=${isMobile ? "768x1280" : "UHD"}&day=random`;
   } else if (type == 3) {
     bgUrl.value = "https://api.vvhan.com/api/wallpaper/acg";
   }
@@ -70,7 +72,7 @@ const imgAnimationEnd = () => {
 const imgLoadError = () => {
   console.error("壁纸加载失败：", bgUrl.value);
   ElMessage({
-    message: "壁纸加载失败，已临时切换回默认",
+    message: "Failed to load wallpaper, switching to default",
     icon: h(Error, {
       theme: "filled",
       fill: "#efefef",

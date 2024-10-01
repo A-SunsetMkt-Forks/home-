@@ -80,14 +80,26 @@ onMounted(() => {
   // 自定义鼠标
   cursorInit();
 
+  var rightClickedTimes = 0;
+  var enableRightClickTimes = 5;
   // 屏蔽右键
   document.oncontextmenu = () => {
-    ElMessage({
-      message: "为了浏览体验，本站禁用右键",
-      grouping: true,
-      duration: 2000,
-    });
-    return false;
+    if (rightClickedTimes < enableRightClickTimes) {
+      rightClickedTimes++;
+      ElMessage({
+        message: "Right click is disabled.",
+        grouping: true,
+        duration: 2000,
+      });
+      return false;
+    } else if (rightClickedTimes == enableRightClickTimes) {
+      rightClickedTimes++;
+      ElMessage({
+        message: "Right click is enabled now.",
+        grouping: true,
+        duration: 2000,
+      });
+    }
   };
 
   // 鼠标中键事件
@@ -95,7 +107,7 @@ onMounted(() => {
     if (event.button == 1) {
       store.backgroundShow = !store.backgroundShow;
       ElMessage({
-        message: `已${store.backgroundShow ? "开启" : "退出"}壁纸展示状态`,
+        message: `${store.backgroundShow ? "Enter" : "Quit"} Wallpaper showing mode`,
         grouping: true,
       });
     }
@@ -118,7 +130,7 @@ onMounted(() => {
  _| |_| |  | |____) |  | |      | |
 |_____|_|  |_|_____/   |_|      |_|`;
   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
-  console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
+  // console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });
 
 onBeforeUnmount(() => {

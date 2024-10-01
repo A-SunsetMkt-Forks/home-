@@ -19,7 +19,7 @@ body {
   padding: 0;
   background-color: #333;
   overflow: hidden;
-  font-family: "HarmonyOS_Regular", sans-serif;
+  font-family: "HarmonyOS Sans", sans-serif;
 }
 
 *,
@@ -27,6 +27,7 @@ a,
 p {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
   user-select: none;
   text-decoration: none;
   color: #fff;
@@ -85,9 +86,16 @@ a:hover {
 
 // 文字超出
 .text-hidden {
-  overflow: hidden;
+  /** overflow: hidden;*/
+  overflow: visible;
   white-space: nowrap;
   text-overflow: ellipsis;
+  /** On mobile phones: */
+  @media (max-width: 768px) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 // 弹窗样式

@@ -3,7 +3,7 @@
   <div class="message">
     <!-- Logo -->
     <div class="logo">
-      <img class="logo-img" :src="siteLogo" alt="logo" />
+      <img class="logo-img" :src="siteLogo" alt="logo" v-if="siteLogo" />
       <div :class="{ name: true, 'text-hidden': true, long: siteUrl[0].length >= 6 }">
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>
@@ -62,7 +62,7 @@ const changeBox = () => {
     store.boxOpenState = !store.boxOpenState;
   } else {
     ElMessage({
-      message: "当前页面宽度不足以开启盒子",
+      message: "Current page width is insufficient to open the box",
       grouping: true,
       icon: h(Error, {
         theme: "filled",
@@ -97,7 +97,7 @@ watch(
     max-width: 460px;
     .logo-img {
       border-radius: 50%;
-      width: 120px;
+      width: 150px;
     }
     .name {
       width: 100%;
@@ -120,6 +120,7 @@ watch(
     @media (max-width: 768px) {
       .logo-img {
         width: 100px;
+        display: none;
       }
       .name {
         height: 128px;

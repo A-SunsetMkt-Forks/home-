@@ -4,7 +4,7 @@
       <Icon size="20">
         <Link />
       </Icon>
-      <span class="title">网站列表</span>
+      <span class="title">Links</span>
     </div>
     <!-- 网站列表 -->
     <Swiper
@@ -25,6 +25,7 @@
             <div
               class="item cards"
               :style="index < 3 ? 'margin-bottom: 20px' : null"
+              :title="item.name"
               @click="jumpLink(item)"
             >
               <Icon size="26">
@@ -43,7 +44,27 @@
 <script setup>
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑选并在此处引入
-import { Link, Blog, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vicons/fa"; // 注意使用正确的类别
+import {
+  Link,
+  Blog,
+  Heartbeat,
+  Windows,
+  ChessRook,
+  CircleRegular,
+  Search,
+  Envelope,
+  User,
+  Newspaper,
+  Desktop,
+  Code,
+  Comment,
+  Paste,
+  Donate,
+  Database,
+  FirefoxBrowser,
+} from "@vicons/fa"; // 注意使用正确的类别
+import { Gauge24Filled, Diamond48Filled, GridDots28Filled } from "@vicons/fluent";
+import { CenterCircle } from "@vicons/carbon";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -63,13 +84,27 @@ const siteLinksList = computed(() => {
 
 // 网站链接图标
 const siteIcon = {
+  Link,
   Blog,
-  Cloud,
-  CompactDisc,
-  Compass,
-  Book,
-  Fire,
-  LaptopCode,
+  Heartbeat,
+  Windows,
+  ChessRook,
+  CircleRegular,
+  Search,
+  Envelope,
+  User,
+  Newspaper,
+  Desktop,
+  Code,
+  Comment,
+  Paste,
+  Donate,
+  Database,
+  Gauge24Filled,
+  Diamond48Filled,
+  CenterCircle,
+  GridDots28Filled,
+  FirefoxBrowser,
 };
 
 // 链接跳转

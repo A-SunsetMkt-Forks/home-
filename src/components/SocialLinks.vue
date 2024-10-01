@@ -3,14 +3,14 @@
   <div class="social">
     <div class="link">
       <a
-        v-for="item in socialLinks"
+        v-for="item in filteredSocialLinks"
         :key="item.name"
         :href="item.url"
         target="_blank"
         @mouseenter="socialTip = item.tip"
-        @mouseleave="socialTip = '通过这里联系我吧'"
+        @mouseleave="socialTip = 'Contact me here'"
       >
-        <img class="icon" :src="item.icon" height="24" />
+        <img class="icon" :src="item.icon" :alt="item.name" height="24" />
       </a>
     </div>
     <span class="tip">{{ socialTip }}</span>
@@ -18,10 +18,20 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import socialLinks from "@/assets/socialLinks.json";
 
+const isChina =
+  navigator.language === "zh-CN" ||
+  navigator.languages.includes("zh-CN") ||
+  Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Shanghai";
+
 // 社交链接提示
-const socialTip = ref("通过这里联系我吧");
+const socialTip = ref("Contact me here");
+
+const filteredSocialLinks = computed(() => {
+  return socialLinks.filter((item) => !(item.name === "Twitter" && isChina));
+});
 </script>
 
 <style lang="scss" scoped>
@@ -46,6 +56,7 @@ const socialTip = ref("通过这里联系我吧");
     .link {
       justify-content: space-evenly !important;
       width: 90%;
+      flex-wrap: wrap;
     }
     .tip {
       display: none !important;
@@ -84,5 +95,9 @@ const socialTip = ref("通过这里联系我吧");
       }
     }
   }
+}
+
+.icon {
+  filter: invert(100%) brightness(200%); /* 将SVG图像变为白色 */
 }
 </style>

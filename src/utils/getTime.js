@@ -11,7 +11,7 @@ export const getCurrentTime = () => {
   let hour = time.getHours() < 10 ? "0" + time.getHours() : time.getHours();
   let minute = time.getMinutes() < 10 ? "0" + time.getMinutes() : time.getMinutes();
   let second = time.getSeconds() < 10 ? "0" + time.getSeconds() : time.getSeconds();
-  let weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+  let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let currentTime = {
     year,
     month,
@@ -28,10 +28,10 @@ export const getCurrentTime = () => {
 export const getTimeCapsule = () => {
   const now = dayjs();
   const dayText = {
-    day: "今日",
-    week: "本周",
-    month: "本月",
-    year: "本年",
+    day: "Today",
+    week: "This Week",
+    month: "This Month",
+    year: "This Year",
   };
   /**
    * 计算时间差的函数
@@ -73,35 +73,34 @@ export const helloInit = () => {
   const hour = new Date().getHours();
   let hello = null;
   if (hour < 6) {
-    hello = "凌晨好";
+    hello = "Good early morning.";
   } else if (hour < 9) {
-    hello = "早上好";
+    hello = "Good morning.";
   } else if (hour < 12) {
-    hello = "上午好";
+    hello = "Good late morning.";
   } else if (hour < 14) {
-    hello = "中午好";
+    hello = "Good afternoon.";
   } else if (hour < 17) {
-    hello = "下午好";
+    hello = "Good late afternoon.";
   } else if (hour < 19) {
-    hello = "傍晚好";
+    hello = "Good evening.";
   } else if (hour < 22) {
-    hello = "晚上好";
+    hello = "Good night.";
   } else {
-    hello = "夜深了";
+    hello = "It's late at night.";
   }
   ElMessage({
     dangerouslyUseHTMLString: true,
-    message: `<strong>${hello}</strong> 欢迎来到我的主页`,
+    message: `<strong>${hello}</strong> Glad to see you.`,
   });
 };
 
 // 默哀模式
 const anniversaries = {
-  4.4: "清明节",
-  5.12: "汶川大地震纪念日",
-  7.7: "中国人民抗日战争纪念日",
-  9.18: "九·一八事变纪念日",
-  12.13: "南京大屠杀死难者国家公祭日",
+  // "6.4": "June 4th",
+  6.3: "Pre June 4th",
+  6.4: "the day when something significant occurred in 1989",
+  6.5: "Post June 4th",
 };
 export const checkDays = () => {
   const myDate = new Date();
@@ -109,12 +108,12 @@ export const checkDays = () => {
   const date = myDate.getDate();
   const key = `${mon}.${date}`;
   if (Object.prototype.hasOwnProperty.call(anniversaries, key)) {
-    console.log(`今天是${anniversaries[key]}`);
+    console.log(`Today is ${anniversaries[key]}`);
     const gray = document.createElement("style");
     gray.innerHTML = "html{filter: grayscale(100%)}";
     document.head.appendChild(gray);
     ElMessage({
-      message: `今天是${anniversaries[key]}`,
+      message: `Today is ${anniversaries[key]}.`,
       duration: 14000,
       icon: h(SpaCandle, { theme: "filled", fill: "#efefef" }),
     });

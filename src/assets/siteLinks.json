@@ -1,37 +1,92 @@
 [
   {
     "icon": "Blog",
-    "name": "博客",
-    "link": "https://blog.imsyy.top/"
+    "name": "Blog",
+    "link": "https://blog.sunmkt.top/"
   },
   {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
+    "icon": "Heartbeat",
+    "name": "Status",
+    "link": "https://status.sunmkt.top/"
   },
   {
-    "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "icon": "Search",
+    "name": "DuckDuckGo",
+    "link": "https://duckduckgo.com/?kae=-1&kp=-2&kn=1&k1=-1&kax=-1&kak=-1&kap=-1&kaq=-1&kao=-1&kau=-1&kc=-1&kg=p&k18=1"
   },
   {
-    "icon": "Compass",
-    "name": "起始页",
-    "link": "https://nav.imsyy.top/"
+    "icon": "Envelope",
+    "name": "Email Service",
+    "link": "https://mail.sunmkt.top/"
   },
   {
-    "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
+    "icon": "CenterCircle",
+    "name": "Blue Archive",
+    "link": "https://ba.sunmkt.top/"
   },
   {
-    "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
+    "icon": "ChessRook",
+    "name": "CyberChef",
+    "link": "https://cyberchef.sunmkt.top/"
   },
   {
-    "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://status.imsyy.top/"
+    "icon": "Paste",
+    "name": "PasteBin",
+    "link": "https://paste.sunmkt.top/"
+  },
+  {
+    "icon": "Link",
+    "name": "Short URL",
+    "link": "https://url.sunmkt.top/"
+  },
+  {
+    "icon": "Comment",
+    "name": "LLM Chat",
+    "link": "https://talk.sunmkt.top/"
+  },
+  {
+    "icon": "Database",
+    "name": "Drive",
+    "link": "https://drive.sunmkt.top/"
+  },
+  {
+    "icon": "Donate",
+    "name": "Donate",
+    "link": "https://donate.sunmkt.top/"
+  },
+  {
+    "icon": "User",
+    "name": "Mori Meina",
+    "link": "https://www.xzc-meina.top/"
+  },
+  {
+    "icon": "Newspaper",
+    "name": "Lianhe Zaobao",
+    "link": "https://www.zaobao.com/"
+  },
+  {
+    "icon": "Windows",
+    "name": "MS Activation",
+    "link": "https://massgrave.dev/"
+  },
+  {
+    "icon": "Diamond48Filled",
+    "name": "AnyDesk",
+    "link": "https://anydesk.com/"
+  },
+  {
+    "icon": "FirefoxBrowser",
+    "name": "Firefox",
+    "link": "https://www.mozilla.org/zh-CN/firefox/new/"
+  },
+  {
+    "icon": "Gauge24Filled",
+    "name": "Speedtest",
+    "link": "https://gfiber.speedtestcustom.com/"
+  },
+  {
+    "icon": "GridDots28Filled",
+    "name": "Tailscale",
+    "link": "https://tailscale.com/"
   }
 ]

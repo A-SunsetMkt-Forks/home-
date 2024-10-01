@@ -4,24 +4,33 @@
     <el-row :gutter="20">
       <el-col :span="12">
         <div class="left">
-          <Hitokoto />
+          <Hitokoto v-if="noHitokoto" />
           <Music v-if="playerHasId" />
         </div>
       </el-col>
       <el-col :span="12">
         <div class="right cards">
           <div class="time">
-            <div class="date">
-              <span>{{ currentTime.year }}&nbsp;年&nbsp;</span>
-              <span>{{ currentTime.month }}&nbsp;月&nbsp;</span>
-              <span>{{ currentTime.day }}&nbsp;日&nbsp;</span>
-              <span class="sm-hidden">{{ currentTime.weekday }}</span>
+            <div class="date" id="_zU480_date">
+              Loading
+              <!--
+              <span>YYYY&nbsp;/&nbsp;</span>
+              <span>MM&nbsp;/&nbsp;</span>
+              <span>DD&nbsp;&nbsp;</span>
+              <span>Weekday</span>
+              -->
             </div>
             <div class="text">
-              <span> {{ currentTime.hour }}:{{ currentTime.minute }}:{{ currentTime.second }}</span>
+              <span id="_zU480">Loading</span>
             </div>
           </div>
-          <Weather />
+          <!--<Weather v-if="weatherKey" />-->
+          <span>
+            <a href="https://time.is/UTC+8" id="time_is_link" rel="nofollow"
+              >UTC+8 by Time.is</a
+            ></span
+          >
+          <!--JavaScript 实现在 index.html-->
         </div>
       </el-col>
     </el-row>
@@ -36,6 +45,8 @@ import Hitokoto from "@/components/Hitokoto.vue";
 import Weather from "@/components/Weather.vue";
 
 const store = mainStore();
+const noHitokoto = import.meta.env.VITE_NO_HITOKOTO;
+const weatherKey = import.meta.env.VITE_WEATHER_KEY === "false" ? false : true;
 
 // 当前时间
 const currentTime = ref({});

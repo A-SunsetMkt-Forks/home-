@@ -1,8 +1,7 @@
 <template>
   <div class="more-content">
     <p>
-      Here should be some secret, but it's
-      <a href="https://portal.sunmkt.top/portal/" target="_blank">not</a>.
+      Here should be some secret, but it's not.
     </p>
   </div>
 </template>

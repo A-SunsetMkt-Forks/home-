@@ -85,8 +85,8 @@
     "link": "https://gfiber.speedtestcustom.com/"
   },
   {
-    "icon": "GridDots28Filled",
-    "name": "Tailscale",
-    "link": "https://tailscale.com/"
+    "icon": "Code",
+    "name": "VSCode",
+    "link": "https://code.visualstudio.com/"
   }
 ]

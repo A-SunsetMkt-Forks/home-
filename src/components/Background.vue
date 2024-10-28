@@ -42,10 +42,10 @@ const changeBg = (type) => {
     bgUrl.value = `/images/background${bgRandom}.jpg`;
   } else if (type == 1) {
     const isMobile = window.innerWidth < 768;
-    bgUrl.value = `https://bingw.sunmkt.top/?resolution=${isMobile ? "768x1280" : "UHD"}`;
+    bgUrl.value = `https://bingw.sunmkt.uk/?resolution=${isMobile ? "768x1280" : "UHD"}`;
   } else if (type == 2) {
     const isMobile = window.innerWidth < 768;
-    bgUrl.value = `https://bingw.sunmkt.top/?resolution=${isMobile ? "768x1280" : "UHD"}&day=random`;
+    bgUrl.value = `https://bingw.sunmkt.uk/?resolution=${isMobile ? "768x1280" : "UHD"}&day=random`;
   } else if (type == 3) {
     bgUrl.value = "https://api.vvhan.com/api/wallpaper/acg";
   }

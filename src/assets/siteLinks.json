@@ -2,12 +2,12 @@
   {
     "icon": "Blog",
     "name": "Blog",
-    "link": "https://blog.sunmkt.top/"
+    "link": "https://blog.sunmkt.uk/"
   },
   {
     "icon": "Heartbeat",
     "name": "Status",
-    "link": "https://status.sunmkt.top/"
+    "link": "https://status.sunmkt.uk/"
   },
   {
     "icon": "Search",
@@ -17,42 +17,42 @@
   {
     "icon": "Envelope",
     "name": "Email Service",
-    "link": "https://mail.sunmkt.top/"
+    "link": "https://mail.sunmkt.uk/"
   },
   {
     "icon": "CenterCircle",
     "name": "Blue Archive",
-    "link": "https://ba.sunmkt.top/"
+    "link": "https://ba.sunmkt.uk/"
   },
   {
     "icon": "ChessRook",
     "name": "CyberChef",
-    "link": "https://cyberchef.sunmkt.top/"
+    "link": "https://cyberchef.sunmkt.uk/"
   },
   {
     "icon": "Paste",
     "name": "PasteBin",
-    "link": "https://paste.sunmkt.top/"
+    "link": "https://paste.sunmkt.uk/"
   },
   {
     "icon": "Link",
     "name": "Short URL",
-    "link": "https://url.sunmkt.top/"
+    "link": "https://url.sunmkt.uk/"
   },
   {
     "icon": "Comment",
     "name": "LLM Chat",
-    "link": "https://talk.sunmkt.top/"
+    "link": "https://talk.sunmkt.uk/"
   },
   {
     "icon": "Database",
     "name": "Drive",
-    "link": "https://drive.sunmkt.top/"
+    "link": "https://drive.sunmkt.uk/"
   },
   {
     "icon": "Donate",
     "name": "Donate",
-    "link": "https://donate.sunmkt.top/"
+    "link": "https://donate.sunmkt.uk/"
   },
   {
     "icon": "User",

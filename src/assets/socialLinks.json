@@ -6,22 +6,16 @@
     "url": "https://github.com/SunsetMkt"
   },
   {
-    "name": "Contact Me Form",
-    "icon": "/images/icon/FormOutlined.svg",
-    "tip": "Complete the form to contact me",
-    "url": "https://contact.sunmkt.top/"
-  },
-  {
     "name": "Email",
     "icon": "/images/icon/Email.svg",
-    "tip": "Email me (not suggested)",
-    "url": "mailto:hi@sunmkt.top"
+    "tip": "Email me",
+    "url": "mailto:hi@sunmkt.uk"
   },
   {
     "name": "Twitter",
     "icon": "/images/icon/BrandTwitter.svg",
     "tip": "Twitter (non-formal)",
-    "url": "https://api.sunmkt.top/api/v1.09/twitter?redir=1"
+    "url": "https://api.sunmkt.uk/api/v1.09/twitter?redir=1"
   },
   {
     "name": "PGP Public Key",

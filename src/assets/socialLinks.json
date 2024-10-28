@@ -6,6 +6,12 @@
     "url": "https://github.com/SunsetMkt"
   },
   {
+    "name": "Contact Me Form",
+    "icon": "/images/icon/FormOutlined.svg",
+    "tip": "Complete the form to contact me",
+    "url": "https://contact.sunmkt.uk/"
+  },
+  {
     "name": "Email",
     "icon": "/images/icon/Email.svg",
     "tip": "Email me",

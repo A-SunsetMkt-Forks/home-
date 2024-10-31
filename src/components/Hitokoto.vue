@@ -40,8 +40,8 @@ const openMusicShow = ref(false);
 
 // 一言数据
 const hitokotoData = reactive({
-  text: "Placeholder",
-  from: "Nameless",
+  text: "An SSL error has occurred and a secure connection to the server cannot be made.",
+  from: "William Shakespeare",
 });
 
 // 获取一言数据

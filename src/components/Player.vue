@@ -91,11 +91,11 @@ onMounted(() => {
       // Playlist is hardcoded
       const res = [
         {
-          name: "Placeholder",
-          artist: "PlaceholderArtist",
-          url: "/music/300.mp3",
+          name: "花の塔 (Tower of Flower)",
+          artist: "さユり (Sayuri)",
+          url: "/music/TowerOfFlower.mp3",
           cover: "/music/300.jpg",
-          lrc: "/music/no.lrc",
+          lrc: "/music/TowerOfFlower.lrc",
         },
       ];
       console.log(res);

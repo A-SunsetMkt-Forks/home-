@@ -95,7 +95,7 @@ onMounted(() => {
           artist: "PlaceholderArtist",
           url: "/music/300.mp3",
           cover: "/music/300.jpg",
-          lrc: "/music/300.lrc",
+          lrc: "/music/no.lrc",
         },
       ];
       console.log(res);

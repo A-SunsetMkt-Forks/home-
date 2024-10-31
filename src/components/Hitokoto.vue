@@ -14,7 +14,7 @@
         @click="store.musicOpenState = true"
       >
         <music-menu theme="filled" size="18" fill="#efefef" />
-        <span>打开音乐播放器</span>
+        <span>Open Music Panel</span>
       </div>
     </Transition>
     <!-- 一言内容 -->
@@ -40,8 +40,8 @@ const openMusicShow = ref(false);
 
 // 一言数据
 const hitokotoData = reactive({
-  text: "这里应该显示一句话",
-  from: "無名",
+  text: "Placeholder",
+  from: "Nameless",
 });
 
 // 获取一言数据
@@ -67,12 +67,12 @@ const getHitokotoData = async () => {
 const updateHitokoto = () => {
   // 防抖
   debounce(() => {
-    getHitokotoData();
+    // getHitokotoData();
   }, 500);
 };
 
 onMounted(() => {
-  getHitokotoData();
+  // getHitokotoData();
 });
 </script>
 

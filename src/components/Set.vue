@@ -14,8 +14,8 @@
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="Custom Setting" name="2" v-if="false">
-        <div class="item" v-if="siteStart">
+      <el-collapse-item title="Custom Settings" name="2">
+        <div class="item" v-if="false">
           <span class="text">建站日期显示</span>
           <el-switch
             v-model="siteStartShow"
@@ -24,8 +24,8 @@
             :inactive-icon="CloseSmall"
           />
         </div>
-        <div class="item" v-if="songID">
-          <span class="text">音乐点击是否打开面板</span>
+        <div class="item" v-if="false">
+          <span class="text">无用</span>
           <el-switch
             v-model="musicClick"
             inline-prompt
@@ -34,7 +34,7 @@
           />
         </div>
         <div class="item" v-if="songID">
-          <span class="text">底栏歌词显示</span>
+          <span class="text">Show lyrics</span>
           <el-switch
             v-model="playerLrcShow"
             inline-prompt
@@ -43,7 +43,7 @@
           />
         </div>
         <div class="item" v-if="songID">
-          <span class="text">底栏背景模糊</span>
+          <span class="text">Blur footer</span>
           <el-switch
             v-model="footerBlur"
             inline-prompt
@@ -52,9 +52,9 @@
           />
         </div>
       </el-collapse-item>
-      <el-collapse-item title="播放器配置" name="3" v-if="songID">
+      <el-collapse-item title="Player Settings" name="3" v-if="songID">
         <div class="item">
-          <span class="text">自动播放</span>
+          <span class="text">Autoplay</span>
           <el-switch
             v-model="playerAutoplay"
             inline-prompt
@@ -63,7 +63,7 @@
           />
         </div>
         <div class="item">
-          <span class="text">随机播放</span>
+          <span class="text">Random Order</span>
           <el-switch
             v-model="playerOrder"
             inline-prompt
@@ -74,11 +74,11 @@
           />
         </div>
         <div class="item">
-          <span class="text">循环模式</span>
+          <span class="text">Loop</span>
           <el-radio-group v-model="playerLoop" size="small" text-color="#FFFFFF">
-            <el-radio value="all" border>列表</el-radio>
-            <el-radio value="one" border>单曲</el-radio>
-            <el-radio value="none" border>不循环</el-radio>
+            <el-radio value="all" border>By List</el-radio>
+            <el-radio value="one" border>Single</el-radio>
+            <el-radio value="none" border>None</el-radio>
           </el-radio-group>
         </div>
       </el-collapse-item>

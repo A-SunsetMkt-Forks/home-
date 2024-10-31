@@ -87,21 +87,31 @@ const listHeight = computed(() => {
 onMounted(() => {
   nextTick(() => {
     try {
-      getPlayerList(props.songServer, props.songType, props.songId).then((res) => {
-        console.log(res);
-        // 更改播放器加载状态
-        store.musicIsOk = true;
-        // 生成歌单
-        playList.value = res;
-        console.log("音乐加载完成");
-        console.log(playList.value);
-        console.log(playIndex.value, playList.value.length, props.volume);
-      });
+      // getPlayerList(props.songServer, props.songType, props.songId).then((res) => {
+      // Playlist is hardcoded
+      const res = [
+        {
+          name: "Placeholder",
+          artist: "PlaceholderArtist",
+          url: "/music/300.mp3",
+          cover: "/music/300.jpg",
+          lrc: "/music/300.lrc",
+        },
+      ];
+      console.log(res);
+      // 更改播放器加载状态
+      store.musicIsOk = true;
+      // 生成歌单
+      playList.value = res;
+      console.log("音乐加载完成");
+      console.log(playList.value);
+      console.log(playIndex.value, playList.value.length, props.volume);
+      // });
     } catch (err) {
       console.error(err);
       store.musicIsOk = false;
       ElMessage({
-        message: "播放器加载失败",
+        message: "Failed to load music",
         grouping: true,
         icon: h(PlayWrong, {
           theme: "filled",
@@ -144,9 +154,9 @@ const onTimeUp = () => {
   }
   let lrc = lyrics[lyricIndex][1];
   if (lrc === "Loading") {
-    lrc = "歌词加载中";
+    lrc = "Loading lyrics";
   } else if (lrc === "Not available") {
-    lrc = "歌词加载失败";
+    lrc = "No lyrics";
   }
   store.setPlayerLrc(lrc);
 };
@@ -178,9 +188,9 @@ const toggleList = () => {
 const loadMusicError = () => {
   let notice = "";
   if (playList.value.length > 1) {
-    notice = "播放歌曲出现错误，播放器将在 2s 后进行下一首";
+    notice = "Failed to load music, switch to next music";
   } else {
-    notice = "播放歌曲出现错误";
+    notice = "Failed to load music";
   }
   ElMessage({
     message: notice,

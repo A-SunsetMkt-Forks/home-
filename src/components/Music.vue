@@ -8,7 +8,7 @@
   >
     <div class="btns">
       <span @click="openMusicList()">Playlist</span>
-      <span @click="store.musicOpenState = false">Return</span>
+      <span @click="store.musicOpenState = false">Back</span>
     </div>
     <div class="control">
       <go-start theme="filled" size="30" fill="#efefef" @click="changeMusicIndex(0)" />

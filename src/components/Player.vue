@@ -89,6 +89,7 @@ onMounted(() => {
     try {
       // getPlayerList(props.songServer, props.songType, props.songId).then((res) => {
       // Playlist is hardcoded
+      // ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
       const res = [
         {
           name: "花の塔 (Tower of Flower)",
@@ -96,6 +97,20 @@ onMounted(() => {
           url: "/music/TowerOfFlower.mp3",
           cover: "/music/300.jpg",
           lrc: "/music/TowerOfFlower.lrc",
+        },
+        {
+          name: 'Hana no Tou / Flower Tower (From "Lycoris Recoil") - English',
+          artist: "Mewsic, Velo S",
+          url: "/music/FlowerTower.mp3",
+          cover: "/music/300.jpg",
+          lrc: "/music/no.lrc",
+        },
+        {
+          name: "Do You Hear The People Sing?",
+          artist: "Aaron Tveit, Eddie Redmayne, Students, Les Misérables Cast",
+          url: "/music/DoYouHearThePeopleSing.mp3",
+          cover: "/music/300.jpg",
+          lrc: "/music/DoYouHearThePeopleSing.lrc",
         },
       ];
       console.log(res);

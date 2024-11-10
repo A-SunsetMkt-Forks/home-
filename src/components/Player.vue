@@ -98,19 +98,27 @@ onMounted(() => {
           cover: "/music/300.jpg",
           lrc: "/music/TowerOfFlower.lrc",
         },
+        /**
         {
           name: 'Hana no Tou / Flower Tower (From "Lycoris Recoil") - English',
           artist: "Mewsic, Velo S",
           url: "/music/FlowerTower.mp3",
           cover: "/music/300.jpg",
           lrc: "/music/no.lrc",
-        },
+        }, */
         {
           name: "Do You Hear The People Sing?",
           artist: "Aaron Tveit, Eddie Redmayne, Students, Les Misérables Cast",
           url: "/music/DoYouHearThePeopleSing.mp3",
           cover: "/music/300.jpg",
           lrc: "/music/DoYouHearThePeopleSing.lrc",
+        },
+        {
+          name: "勾指起誓",
+          artist: "ilem",
+          url: "/music/勾指起誓.mp3",
+          cover: "/music/300.jpg",
+          lrc: "/music/勾指起誓.lrc",
         },
       ];
       console.log(res);

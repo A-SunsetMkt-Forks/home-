@@ -114,7 +114,7 @@ onMounted(() => {
           lrc: "/music/DoYouHearThePeopleSing.lrc",
         },
         {
-          name: "勾指起誓",
+          name: "勾指起誓 (Pinky Swear)",
           artist: "ilem",
           url: "/music/勾指起誓.mp3",
           cover: "/music/300.jpg",

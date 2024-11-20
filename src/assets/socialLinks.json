@@ -18,10 +18,10 @@
     "url": "mailto:hi@sunmkt.uk"
   },
   {
-    "name": "Twitter",
-    "icon": "/images/icon/BrandTwitter.svg",
-    "tip": "Twitter (non-formal)",
-    "url": "https://api.sunmkt.uk/api/v1.09/twitter?redir=1"
+    "name": "Bluesky",
+    "icon": "/images/icon/Butterfly.svg",
+    "tip": "Bluesky (non-formal)",
+    "url": "https://bsky.app/profile/sunmkt.uk"
   },
   {
     "name": "PGP Public Key",

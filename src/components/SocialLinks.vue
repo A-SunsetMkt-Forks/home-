@@ -6,7 +6,9 @@
         v-for="item in filteredSocialLinks"
         :key="item.name"
         :href="item.url"
+        :title="item.name"
         target="_blank"
+        rel="me"
         @mouseenter="socialTip = item.tip"
         @mouseleave="socialTip = 'Contact me here'"
       >

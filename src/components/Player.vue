@@ -92,7 +92,7 @@ onMounted(() => {
       // ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
       const res = [
         {
-          name: 'Memories of Kindness (Blue Archive OST Orchestral Cover)',
+          name: "Memories of Kindness (Blue Archive OST Orchestral Cover)",
           artist: "Mitsukiyo, KARUT, Nor, 小野貴光",
           url: "/music/MemoriesofKindness.mp3",
           cover: "/music/300.jpg",

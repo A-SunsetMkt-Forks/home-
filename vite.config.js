@@ -78,7 +78,7 @@ export default ({ mode }) =>
       preprocessorOptions: {
         scss: {
           charset: false,
-          additionalData: `@import "./src/style/global.scss";`,
+          additionalData: `@import "/src/style/global.scss";`,
         },
       },
     },

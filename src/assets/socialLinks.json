@@ -24,9 +24,9 @@
     "url": "https://bsky.app/profile/sunmkt.uk"
   },
   {
-    "name": "PGP Public Key",
+    "name": "Keybase",
     "icon": "/images/icon/Key.svg",
-    "tip": "Currently not used",
-    "url": "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xa1c058db7f575893"
+    "tip": "Public key and more",
+    "url": "https://keybase.io/sunsetmkt"
   }
 ]

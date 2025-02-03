@@ -98,9 +98,12 @@ export const helloInit = () => {
 // 默哀模式
 const anniversaries = {
   // "6.4": "June 4th",
-  6.3: "Pre June 4th",
-  6.4: "the day when something significant occurred in 1989",
-  6.5: "Post June 4th",
+  6.4: "1989 Tiananmen Square Protests and Massacre",
+  9.18: "2022 Guizhou Bus Crash",
+  10.13: "2022 Beijing Sitong Bridge Protest",
+  11.24: "2022 Ürümqi Fire",
+  11.25: "2022 Ürümqi Fire Protests",
+  11.26: "2022 Shanghai Ürümqi Middle Road Protest",
 };
 export const checkDays = () => {
   const myDate = new Date();

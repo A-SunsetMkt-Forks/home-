@@ -24,6 +24,12 @@
     "url": "https://bsky.app/profile/sunmkt.uk"
   },
   {
+    "name": "Matrix",
+    "icon": "/images/icon/Matrix_icon.svg",
+    "tip": "Secure, decentralised communication",
+    "url": "https://matrix.to/#/@sunmkt:mozilla.org"
+  },
+  {
     "name": "Keybase",
     "icon": "/images/icon/Key.svg",
     "tip": "Public key and more",

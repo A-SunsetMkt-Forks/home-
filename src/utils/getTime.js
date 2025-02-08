@@ -98,6 +98,7 @@ export const helloInit = () => {
 // 默哀模式
 const anniversaries = {
   // "6.4": "June 4th",
+  2.7: "2020 Death of Li Wenliang",
   5.16: "1966 Cultural Revolution",
   6.4: "1989 Tiananmen Square Protests and Massacre",
   9.18: "2022 Guizhou Bus Crash",

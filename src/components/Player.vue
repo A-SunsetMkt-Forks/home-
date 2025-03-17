@@ -90,18 +90,19 @@ onMounted(() => {
       // getPlayerList(props.songServer, props.songType, props.songId).then((res) => {
       // Playlist is hardcoded
       // ffmpeg -i input.flac -ab 320k -map_metadata 0 -id3v2_version 3 output.mp3
+      // ffmpeg -i input.wav -c:a libopus -b:a 160k output.opus
       const res = [
         {
           name: "Memories of Kindness (Blue Archive OST Orchestral Cover)",
           artist: "Mitsukiyo, KARUT, Nor, 小野貴光",
-          url: "/music/MemoriesofKindness.mp3",
+          url: "/music/MemoriesofKindness.opus",
           cover: "/music/300.jpg",
           lrc: "/music/no.lrc",
         },
         {
           name: "花の塔 (Tower of Flower)",
           artist: "さユり (Sayuri)",
-          url: "/music/TowerOfFlower.mp3",
+          url: "/music/TowerOfFlower.opus",
           cover: "/music/300.jpg",
           lrc: "/music/TowerOfFlower.lrc",
         },
@@ -109,21 +110,21 @@ onMounted(() => {
         {
           name: 'Hana no Tou / Flower Tower (From "Lycoris Recoil") - English',
           artist: "Mewsic, Velo S",
-          url: "/music/FlowerTower.mp3",
+          url: "/music/FlowerTower.opus",
           cover: "/music/300.jpg",
           lrc: "/music/no.lrc",
         }, */
         {
           name: "Do You Hear The People Sing?",
           artist: "Aaron Tveit, Eddie Redmayne, Students, Les Misérables Cast",
-          url: "/music/DoYouHearThePeopleSing.mp3",
+          url: "/music/DoYouHearThePeopleSing.opus",
           cover: "/music/300.jpg",
           lrc: "/music/DoYouHearThePeopleSing.lrc",
         },
         {
           name: "勾指起誓 (Pinky Swear)",
           artist: "ilem",
-          url: "/music/勾指起誓.mp3",
+          url: "/music/勾指起誓.opus",
           cover: "/music/300.jpg",
           lrc: "/music/勾指起誓.lrc",
         },

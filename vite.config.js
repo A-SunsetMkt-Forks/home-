@@ -29,14 +29,14 @@ export default ({ mode }) =>
           runtimeCaching: [
             {
               urlPattern: /(.*?)\.(js|css|woff2|woff|ttf)/, // js / css 静态资源缓存
-              handler: "NetworkFirst",
+              handler: "CacheFirst",
               options: {
                 cacheName: "js-css-cache",
               },
             },
             {
               urlPattern: /(.*?)\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps)/, // 图片缓存
-              handler: "NetworkFirst",
+              handler: "CacheFirst",
               options: {
                 cacheName: "image-cache",
               },

@@ -23,13 +23,14 @@ export default ({ mode }) =>
       }),
       VitePWA({
         registerType: "autoUpdate",
+        includeAssets: ["/images/background0.jpg"], // 确保该图片被预缓存
         workbox: {
           skipWaiting: true,
           clientsClaim: true,
           runtimeCaching: [
             {
               urlPattern: new RegExp(".*\\.(js|css|woff2|woff|ttf)$"),
-              handler: "StaleWhileRevalidate",
+              handler: "CacheFirst",
               options: {
                 cacheName: "v1-js-css-cache",
                 expiration: {
@@ -40,7 +41,7 @@ export default ({ mode }) =>
             },
             {
               urlPattern: new RegExp(".*\\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$"),
-              handler: "StaleWhileRevalidate",
+              handler: "CacheFirst",
               options: {
                 cacheName: "v1-image-media-cache",
                 expiration: {

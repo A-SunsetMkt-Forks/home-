@@ -36,7 +36,6 @@ export default ({ mode }) =>
                   maxEntries: 50,
                   maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
                 },
-                networkTimeoutSeconds: 3,
               },
             },
             {
@@ -48,7 +47,6 @@ export default ({ mode }) =>
                   maxEntries: 50,
                   maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
                 },
-                networkTimeoutSeconds: 3,
               },
             },
           ],
@@ -98,7 +96,7 @@ export default ({ mode }) =>
       preprocessorOptions: {
         scss: {
           api: "modern",
-          additionalData: `@use "./src/style/global.scss" as *;`,
+          additionalData: `@use "/src/style/global.scss" as *;`,
           silenceDeprecations: ["legacy-js-api"],
         },
       },

@@ -75,6 +75,11 @@ export default ({ mode }) =>
             },
           ],
         },
+        /* 开发环境启用 sw */
+        devOptions: {
+          enabled: true,
+          /* 其他选项 */
+        },
       }),
       viteCompression(),
       createHtmlPlugin({

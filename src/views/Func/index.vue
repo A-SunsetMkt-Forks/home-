@@ -136,7 +136,7 @@ onBeforeUnmount(() => {
           margin-top: 10px;
           font-size: 3.25rem;
           letter-spacing: 2px;
-          font-family: "JetBrainsMono-Regular";
+          font-family: "UnidreamLED";
         }
         @media (min-width: 1201px) and (max-width: 1280px) {
           font-size: 1rem;

@@ -57,6 +57,12 @@ a:hover {
   src: url("/font/UnidreamLED.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  font-display: swap;
+  src: url("/font/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
 // 基础样式
 #app {
   position: fixed;

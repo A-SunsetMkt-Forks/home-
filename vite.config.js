@@ -29,23 +29,14 @@ export default ({ mode }) =>
           clientsClaim: true,
           runtimeCaching: [
             {
-              urlPattern: new RegExp(".*\\.(js|css|woff2|woff|ttf)$"),
+              urlPattern: new RegExp(
+                ".*\\.(js|css|woff2|woff|ttf|png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$",
+              ),
               handler: "StaleWhileRevalidate",
               options: {
-                cacheName: "v1-js-css-cache",
+                cacheName: "assets-cache-v1",
                 expiration: {
-                  maxEntries: 50,
-                  maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
-                },
-              },
-            },
-            {
-              urlPattern: new RegExp(".*\\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$"),
-              handler: "StaleWhileRevalidate",
-              options: {
-                cacheName: "v1-image-media-cache",
-                expiration: {
-                  maxEntries: 50,
+                  maxEntries: 100,
                   maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
                 },
               },

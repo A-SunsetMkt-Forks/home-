@@ -30,7 +30,7 @@ export default ({ mode }) =>
           runtimeCaching: [
             {
               urlPattern: new RegExp(".*\\.(js|css|woff2|woff|ttf)$"),
-              handler: "CacheFirst",
+              handler: "StaleWhileRevalidate",
               options: {
                 cacheName: "v1-js-css-cache",
                 expiration: {
@@ -41,7 +41,7 @@ export default ({ mode }) =>
             },
             {
               urlPattern: new RegExp(".*\\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$"),
-              handler: "CacheFirst",
+              handler: "StaleWhileRevalidate",
               options: {
                 cacheName: "v1-image-media-cache",
                 expiration: {

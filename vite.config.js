@@ -28,17 +28,27 @@ export default ({ mode }) =>
           clientsClaim: true,
           runtimeCaching: [
             {
-              urlPattern: /(.*?)\.(js|css|woff2|woff|ttf)/, // js / css 静态资源缓存
-              handler: "CacheFirst",
+              urlPattern: new RegExp(".*\\.(js|css|woff2|woff|ttf)$"),
+              handler: "StaleWhileRevalidate",
               options: {
-                cacheName: "js-css-cache",
+                cacheName: "v1-js-css-cache",
+                expiration: {
+                  maxEntries: 50,
+                  maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
+                },
+                networkTimeoutSeconds: 3,
               },
             },
             {
-              urlPattern: /(.*?)\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps)/, // 图片缓存
-              handler: "CacheFirst",
+              urlPattern: new RegExp(".*\\.(png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$"),
+              handler: "StaleWhileRevalidate",
               options: {
-                cacheName: "image-cache",
+                cacheName: "v1-image-media-cache",
+                expiration: {
+                  maxEntries: 50,
+                  maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
+                },
+                networkTimeoutSeconds: 3,
               },
             },
           ],
@@ -87,7 +97,7 @@ export default ({ mode }) =>
     css: {
       preprocessorOptions: {
         scss: {
-          api: 'modern',
+          api: "modern",
           additionalData: `@use "./src/style/global.scss" as *;`,
           silenceDeprecations: ["legacy-js-api"],
         },

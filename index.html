@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Sunset's Landing Page" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- VitePWA <link rel="manifest" href="/site.webmanifest" /> -->
 
     <meta name="description" content="%VITE_SITE_DES%" />
     <meta name="keywords" content="%VITE_SITE_KEYWORDS%" />
@@ -40,15 +40,24 @@
   <body>
     <!-- 主体内容 -->
     <div id="app">
-      <div id="legacy">
+      <div id="fallback" style="display: none">
         <h1>Unable to render the site?</h1>
         <p>Jump to the <a href="https://blog.sunmkt.uk/">blog site</a>.</p>
       </div>
     </div>
     <!-- noscript -->
     <noscript>
-      <div style="text-align: center">Please enable JavaScript</div>
+      <div style="text-align: center">
+        Please enable JavaScript to use this site. Or jump to the
+        <a href="https://blog.sunmkt.uk/">blog site</a>.
+      </div>
     </noscript>
+    <script>
+      // Wait for 10 seconds before showing the fallback
+      setTimeout(function () {
+        document.getElementById("fallback").style.display = "block";
+      }, 10000);
+    </script>
     <script type="module" src="/src/main.js"></script>
     <script src="//widget.time.is/en.js"></script>
     <script>
@@ -82,7 +91,7 @@
     <style>
       #_zU480,
       #_zU480_date {
-          pointer-events: none;
+        pointer-events: none;
       }
     </style>
   </body>

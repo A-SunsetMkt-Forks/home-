@@ -21,7 +21,6 @@ export default ({ mode }) =>
       Components({
         resolvers: [ElementPlusResolver()],
       }),
-      /**
       VitePWA({
         registerType: "autoUpdate",
         workbox: {
@@ -54,13 +53,20 @@ export default ({ mode }) =>
           background_color: "#424242",
           icons: [
             {
-              src: "/images/icon/48.png",
-              sizes: "48x48",
+              src: "/web-app-manifest-192x192.png",
+              sizes: "192x192",
               type: "image/png",
+              purpose: "maskable",
+            },
+            {
+              src: "/web-app-manifest-512x512.png",
+              sizes: "512x512",
+              type: "image/png",
+              purpose: "maskable",
             },
           ],
         },
-      }),*/
+      }),
       viteCompression(),
       createHtmlPlugin({
         minify: true,

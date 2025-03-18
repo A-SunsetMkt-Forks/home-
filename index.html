@@ -39,12 +39,11 @@
 
   <body>
     <!-- 主体内容 -->
-    <div id="app">
-      <div id="fallback" style="display: none">
-        <h1>Unable to render the site?</h1>
-        <p>Jump to the <a href="https://blog.sunmkt.uk/">blog site</a>.</p>
-      </div>
+    <div id="fallback" style="display: none">
+      <h1>Unable to render the site?</h1>
+      <p>Jump to the <a href="https://blog.sunmkt.uk/">blog site</a>.</p>
     </div>
+    <div id="app"></div>
     <!-- noscript -->
     <noscript>
       <div style="text-align: center">
@@ -55,6 +54,7 @@
     <script>
       // Wait for 10 seconds before showing the fallback
       setTimeout(function () {
+        if (!document.getElementById("fallback")) return;
         document.getElementById("fallback").style.display = "block";
       }, 10000);
     </script>

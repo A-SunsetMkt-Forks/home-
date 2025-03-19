@@ -25,9 +25,14 @@ export default ({ mode }) =>
         registerType: "autoUpdate",
         includeAssets: ["/images/background0.jpg"], // 确保该图片被预缓存
         workbox: {
+          navigateFallback: null,
           skipWaiting: true,
           clientsClaim: true,
           runtimeCaching: [
+            {
+              urlPattern: /\/ping\.txt$/, // 确保 ping.txt 直接从网络获取
+              handler: "NetworkOnly",
+            },
             {
               urlPattern: new RegExp(
                 ".*\\.(js|css|woff2|woff|ttf|png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$",

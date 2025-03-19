@@ -17,6 +17,6 @@ app.mount("#app");
 // PWA
 navigator.serviceWorker.addEventListener("controllerchange", () => {
   // 弹出更新提醒
-  console.log("The site is updated, please refresh");
-  ElMessage("The site is updated, please refresh");
+  console.log("This site has been updated. Please refresh this page.");
+  ElMessage("This site has been updated. Please refresh this page.");
 });

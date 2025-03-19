@@ -12,7 +12,7 @@
         <div class="right cards">
           <div class="time">
             <div class="date" id="_zU480_date">
-              Loading
+              Internet Time
               <!--
               <span>YYYY&nbsp;/&nbsp;</span>
               <span>MM&nbsp;/&nbsp;</span>
@@ -21,7 +21,7 @@
               -->
             </div>
             <div class="text">
-              <span id="_zU480">Loading</span>
+              <span id="_zU480">Unknown</span>
             </div>
           </div>
           <!--<Weather v-if="weatherKey" />-->

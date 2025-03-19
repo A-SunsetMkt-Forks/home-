@@ -2,13 +2,13 @@
   {
     "name": "GitHub",
     "icon": "/images/icon/BrandGithub.svg",
-    "tip": "Check out my GitHub profile",
+    "tip": "GitHub",
     "url": "https://github.com/SunsetMkt"
   },
   {
     "name": "Contact Me Form",
     "icon": "/images/icon/FormOutlined.svg",
-    "tip": "Complete the form to contact me",
+    "tip": "Contact me",
     "url": "https://contact.sunmkt.uk/"
   },
   {
@@ -20,19 +20,19 @@
   {
     "name": "Bluesky",
     "icon": "/images/icon/Butterfly.svg",
-    "tip": "Bluesky (non-formal)",
+    "tip": "Bluesky",
     "url": "https://bsky.app/profile/sunmkt.uk"
   },
   {
     "name": "Matrix",
     "icon": "/images/icon/Matrix_icon.svg",
-    "tip": "Secure, decentralised communication",
+    "tip": "Matrix",
     "url": "https://matrix.to/#/@sunmkt:mozilla.org"
   },
   {
     "name": "Keybase",
     "icon": "/images/icon/Key.svg",
-    "tip": "Public key and more",
+    "tip": "Public key",
     "url": "https://keybase.io/sunsetmkt"
   }
 ]

@@ -97,5 +97,24 @@
     <script>
       console.log("This PWA site may not accurately reflect online status. Debug carefully.");
     </script>
+    <!-- https://github.com/hejny/Ukraine -->
+    <script
+      src="https://fastly.jsdelivr.net/npm/save-ukraine@0.18.0/dist/umd/main.js"
+      integrity="sha384-Xn1RAG80M8PZlBQh3r8fUvHY7c8RtuplSnqXOkdJyCxqRsToRwJ1m2FP7vyJo7u/"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      Ukraine.save({
+        ribbon: "TOP_LEFT",
+        hasShadow: true,
+        // countries: [/* Russia and Belarus */ "ru", "by"],
+        isCancelable: true,
+        isBloodIncluded: false,
+        isGraphicIncluded: false,
+        moreInfoUrl: "https://war.ukraine.ua/",
+        isInConsole: true,
+        text: `Остановить войну с <b>Украиной</b>`,
+      });
+    </script>
   </body>
 </html>

@@ -93,6 +93,13 @@ onMounted(() => {
       // ffmpeg -i input.wav -c:a libopus -b:a 160k output.opus
       const res = [
         {
+          name: "Find My Way",
+          artist: "FoldEcho",
+          url: "/music/FindMyWay.opus",
+          cover: "/music/300.jpg",
+          lrc: "/music/FindMyWay.lrc",
+        },
+        {
           name: "Memories of Kindness (Blue Archive OST Orchestral Cover)",
           artist: "Mitsukiyo, KARUT, Nor, 小野貴光",
           url: "/music/MemoriesofKindness.opus",

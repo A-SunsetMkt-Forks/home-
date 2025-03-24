@@ -100,6 +100,13 @@ onMounted(() => {
           lrc: "/music/FindMyWay.lrc",
         },
         {
+          name: "A Journey of Fireworks",
+          artist: "FoldEcho",
+          url: "/music/AJourneyofFireworks.opus",
+          cover: "/music/300.jpg",
+          lrc: "/music/AJourneyofFireworks.lrc",
+        },
+        {
           name: "Memories of Kindness (Blue Archive OST Orchestral Cover)",
           artist: "Mitsukiyo, KARUT, Nor, 小野貴光",
           url: "/music/MemoriesofKindness.opus",
@@ -120,14 +127,14 @@ onMounted(() => {
           url: "/music/FlowerTower.opus",
           cover: "/music/300.jpg",
           lrc: "/music/no.lrc",
-        }, */
+        },
         {
           name: "Do You Hear The People Sing?",
           artist: "Aaron Tveit, Eddie Redmayne, Students, Les Misérables Cast",
           url: "/music/DoYouHearThePeopleSing.opus",
           cover: "/music/300.jpg",
           lrc: "/music/DoYouHearThePeopleSing.lrc",
-        },
+        }, */
         {
           name: "勾指起誓 (Pinky Swear)",
           artist: "ilem",

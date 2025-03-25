@@ -34,6 +34,17 @@ export default ({ mode }) =>
               handler: "NetworkOnly",
             },
             {
+              urlPattern: /^\/$/, // 匹配根路径 /
+              handler: "NetworkFirst", // 优先从网络获取
+              options: {
+                cacheName: "root-cache",
+                expiration: {
+                  maxEntries: 5, // 限制缓存数量
+                  maxAgeSeconds: 30 * 24 * 60 * 60, // 30 天
+                },
+              },
+            },
+            {
               urlPattern: new RegExp(
                 ".*\\.(js|css|woff2|woff|ttf|png|jpe?g|svg|gif|bmp|psd|tiff|tga|eps|lrc|mp3|opus)$",
               ),

@@ -21,6 +21,7 @@ export default ({ mode }) =>
       Components({
         resolvers: [ElementPlusResolver()],
       }),
+      /**
       VitePWA({
         registerType: "autoUpdate",
         includeAssets: ["/images/background0.jpg"], // 确保该图片被预缓存
@@ -82,12 +83,10 @@ export default ({ mode }) =>
             },
           ],
         },
-        /* 开发环境启用 sw */
         devOptions: {
           enabled: true,
-          /* 其他选项 */
         },
-      }),
+      }), */
       viteCompression(),
       createHtmlPlugin({
         minify: true,

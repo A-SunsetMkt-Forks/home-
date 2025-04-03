@@ -63,6 +63,7 @@ import {
   Database,
   FirefoxBrowser,
   Heart,
+  CircleNotch,
 } from "@vicons/fa"; // 注意使用正确的类别
 import { Gauge24Filled, Diamond48Filled, GridDots28Filled } from "@vicons/fluent";
 import { CenterCircle } from "@vicons/carbon";
@@ -107,6 +108,7 @@ const siteIcon = {
   GridDots28Filled,
   FirefoxBrowser,
   Heart,
+  CircleNotch,
 };
 
 // 链接跳转

@@ -97,7 +97,8 @@ export const helloInit = () => {
 
 // 默哀模式
 const anniversaries = {
-  // "6.4": "June 4th",
+  6.4: "June 4th",
+  /** 
   2.7: "2020 Death of Li Wenliang",
   5.16: "1966 Cultural Revolution",
   6.4: "1989 Tiananmen Square Protests and Massacre",
@@ -106,6 +107,7 @@ const anniversaries = {
   11.24: "2022 Ürümqi Fire",
   11.25: "2022 Ürümqi Fire Protests",
   11.26: "2022 Shanghai Ürümqi Middle Road Protest",
+  */
 };
 export const checkDays = () => {
   const myDate = new Date();

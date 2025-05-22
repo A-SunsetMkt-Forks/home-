@@ -93,6 +93,13 @@ onMounted(() => {
       // ffmpeg -i input.wav -c:a libopus -b:a 160k output.opus
       const res = [
         {
+          name: "花の塔 (Tower of Flower)",
+          artist: "さユり (Sayuri)",
+          url: "/music/TowerOfFlower.opus",
+          cover: "/music/300.jpg",
+          lrc: "/music/TowerOfFlower.lrc",
+        },
+        {
           name: "Find My Way",
           artist: "FoldEcho",
           url: "/music/FindMyWay.opus",
@@ -112,13 +119,6 @@ onMounted(() => {
           url: "/music/MemoriesofKindness.opus",
           cover: "/music/300.jpg",
           lrc: "/music/no.lrc",
-        },
-        {
-          name: "花の塔 (Tower of Flower)",
-          artist: "さユり (Sayuri)",
-          url: "/music/TowerOfFlower.opus",
-          cover: "/music/300.jpg",
-          lrc: "/music/TowerOfFlower.lrc",
         },
         /**
         {

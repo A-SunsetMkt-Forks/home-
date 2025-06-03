@@ -39,9 +39,15 @@ const store = mainStore();
 const openMusicShow = ref(false);
 
 // 一言数据
+/**
 const hitokotoData = reactive({
   text: "An SSL error has occurred and a secure connection to the server cannot be made.",
   from: "William Shakespeare",
+});
+*/
+const hitokotoData = reactive({
+  text: "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+  from: "Universal Declaration of Human Rights",
 });
 
 // 获取一言数据
